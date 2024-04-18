@@ -20,5 +20,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     omni_bluejay-userdebug \
-    omni_bluejay-user
-	omni_bluejay-eng
+    omni_bluejay-user \
+    omni_bluejay-eng
