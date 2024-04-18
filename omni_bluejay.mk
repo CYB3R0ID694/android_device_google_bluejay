@@ -7,19 +7,25 @@
 # Get the prebuilt list of APNs
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/google/oriole/overlay
+DEVICE_PACKAGE_OVERLAYS += device/google/bluejay/overlay
 
 
 # Inherit device configuration
 $(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, device/google/gs101/device_omni.mk)
+$(call inherit-product, device/google/gs101/device-omni.mk)
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
 $(call inherit-product, device/google/bluejay/device-omni.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel 6a
 PRODUCT_NAME := omni_bluejay
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Pixel 6a
+PRODUCT_MANUFACTURER := Google
+
+
+#PRODUCT_BRAND := google
+#PRODUCT_MODEL := Pixel 6a
+#PRODUCT_NAME := omni_bluejay
 
 # Boot animation
 TARGET_BOOTANIMATION_SIZE := 1080p
