@@ -285,3 +285,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.quick_start.oem_id=00e0 \
     ro.quick_start.device_id=bluejay
+
+# Signed Build
+$(call inherit-product, vendor/extra/product.mk)
