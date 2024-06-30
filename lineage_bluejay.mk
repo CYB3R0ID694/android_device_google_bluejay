@@ -25,6 +25,7 @@ PRODUCT_NAME := rising_bluejay
 # RisingOS variables
 RISING_MAINTAINER := CYB3R0ID694
 RISING_CHIPSET := Google Tensor G1
+TARGET_HAS_UDFPS := true
 
 # Gms variables
 WITH_GMS := true
