@@ -10,7 +10,7 @@ DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Gapps
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+#$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
