@@ -38,3 +38,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/bluejay/bluejay:14/AP2A.240805.005.F1/12043167:user/release-keys
 
 $(call inherit-product, vendor/google/bluejay/bluejay-vendor.mk)
+
+#add priv8 keys for signing builds
+-include vendor/lineage-priv/keys/keys.mk
