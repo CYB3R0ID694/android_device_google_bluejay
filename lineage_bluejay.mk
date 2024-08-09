@@ -20,22 +20,30 @@ $(call inherit-product, device/google/bluejay/device-lineage.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
-PRODUCT_NAME := lineage_bluejay
+PRODUCT_NAME := rising_bluejay
 
-# Crdroid Extra Stuffs
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_IS_PIXEL := true
-WITH_GAPPS := true
-TARGET_HAS_UDFPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-EXTRA_UDFPS_ANIMATIONS := true
+# RisingOS variables
+RISING_MAINTAINER := CYB3R0ID694
+RISING_CHIPSET := Google Tensor G1
+
+# Gms variables
+WITH_GMS := true
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# Wether to ship pixel launcher and set it as default launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 # Use Scudo instead of Jemalloc
 PRODUCT_USE_SCUDO := true
+PRODUCT_USE_SCUDO_32_BIT := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=bluejay \
-    PRIVATE_BUILD_DESC="bluejay-user 14 AP2A.240705.004 11875680 release-keys"
+    PRIVATE_BUILD_DESC="bluejay-user 14 AP2A.240705.004 11875680 release-keys" \
+    RISING_CHIPSET="Google Tensor G1" \
+    RISING_MAINTAINER="CYB3R0ID694"
 
 BUILD_FINGERPRINT := google/bluejay/bluejay:14/AP2A.240705.004/11875680:user/release-keys
 
